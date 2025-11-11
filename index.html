@@ -26,13 +26,13 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Tambahan animasi fade-in lembut */
+    /* Animasi lembut untuk logo */
     .logo {
       opacity: 0;
-      animation: fadeIn 1.5s ease forwards;
+      animation: fadeIn 1.2s ease forwards;
     }
     @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
+      from { opacity: 0; transform: scale(0.9); }
       to { opacity: 1; transform: scale(1); }
     }
 
@@ -44,6 +44,15 @@
       color: #333;
     }
     .container { padding: 20px; max-width: 600px; margin: auto; }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    @media (min-width: 480px) {
+      header { flex-direction: row; justify-content: center; }
+    }
     .btn {
       display: block;
       text-decoration: none;
@@ -71,11 +80,12 @@
 <body>
   <div class="container">
     <header>
-      <img src="assets/japritoto-logo-google.gif" alt="Logo Japri Hub" class="logo" style="width:120px;">
-      <img src="logo-japritoto.png" alt="Logo Japri Hub PNG" class="logo" style="width:120px;">
-      <h1>✨ Event & Info Resmi Japri Hub 2025</h1>
-      <p>Temukan event dan informasi hiburan terbaru di Japri Hub 2025! 🎮</p>
+      <img src="assets/japritoto-logo-google.gif" alt="Logo Japri Hub GIF" class="logo" style="width:120px;">
+      <img src="assets/logo-japritoto.png" alt="Logo Japri Hub PNG" class="logo" style="width:120px;">
     </header>
+
+    <h1>✨ Event & Info Resmi Japri Hub 2025</h1>
+    <p>Temukan event dan informasi hiburan terbaru di Japri Hub 2025! 🎮</p>
 
     <main>
       <a href="https://japritoto04.com/register?referral_code=safira1" target="_blank" class="btn">🌐 Kunjungi Website Utama</a>
@@ -91,4 +101,3 @@
   </div>
 </body>
 </html>
-
